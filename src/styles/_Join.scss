@@ -1,0 +1,118 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #1A1A1D;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    &{
+      height: 100%;
+    }    
+  }
+
+  .joinInnerContainer {
+    width: 35%;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      &{
+        width: 90%;
+      }
+      
+    }
+    .heading {
+      color: #ff9800;
+      font-size: 2.5em;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ff9800;
+    }
+
+    div{
+      .joinInput {
+        border-radius: 0;
+        padding: 15px 20px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #ff9800;
+        color: #9e9e9e;
+        font-size: 1rem;
+
+
+        &::placeholder{
+          color: #ff9800
+        }
+
+        &:focus::-webkit-input-placeholder{
+          opacity: 0;
+          -webkit-transition: .4s;
+          -moz-transition: .4s;
+          -o-transition: .4s;
+          transition: .4s;
+        }
+
+        &:focus::-ms-input-placeholder{
+          opacity: 0;
+          -webkit-transition: .4s;
+          -moz-transition: .4s;
+          -o-transition: .4s;
+          transition: .4s;
+        }
+
+
+        &:focus::placeholder{
+          opacity: 0;
+          -webkit-transition: .4s;
+          -moz-transition: .4s;
+          -o-transition: .4s;
+          transition: .4s;
+        }
+
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    .button {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #f44336;
+        padding: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        width: 100%;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:focus {
+          outline: 0;
+        }
+    }
+
+  }
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+::selection { background-color: #000; }

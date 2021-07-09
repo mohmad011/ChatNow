@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+
+  .input {
+    border: none;
+    border-radius: 0;
+    padding: 5%;
+    width: 80%;
+    border-top: 1px solid #e91e63;
+
+    &:focus{
+      outline: none;
+    }
+
+    &::placeholder
+    {
+      color: #e91e63
+    }
+
+    &:focus::-webkit-input-placeholder
+    {
+      opacity: 0;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+    }
+
+    &:focus::-ms-input-placeholder
+    {
+      opacity: 0;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+    }
+
+
+    &:focus::placeholder
+    {
+      opacity: 0;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+    }
+  }
+
+  .sendButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e91e63;
+    padding: 20px;
+    display: inline-block;
+    border: none;
+    width: 20%;
+    cursor: pointer;
+  }
+}
+
+::selection { background-color: #e91e63; color: #fff}
