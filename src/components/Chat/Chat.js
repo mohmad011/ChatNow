@@ -37,7 +37,7 @@ const Chat = ({ location , match }) => {
   
   useEffect(() => {
     socket.on('message', message => {
-      setMessages(messages => [ ...messages, message ]);
+        setMessages(messages => [ ...messages, message ])
     });
     
     socket.on("roomData", ({ users }) => {
