@@ -5,10 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "parcel build public/*.html -d build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "parcel public/*.html -d build",
-    "build": "npm run build"
+    "build": "parcel build public/*.html -d build"
   },
   "keywords": [],
   "author": "",
